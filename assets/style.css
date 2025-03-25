@@ -1,0 +1,99 @@
+* {
+    font-family: "Avenir", "Helvetica Neue", "Arial Rounded MT Bold", sans-serif;
+    font-size: 14px;
+    color: #202020;
+}
+
+#window-login,
+#window-main,
+#window-forum,
+#window-discutii,
+#window-lista-prieteni,
+#window-add-prieteni,
+#window-cautare,
+#window-topic {
+    background-image: url('background-main.png');
+    background-size: cover;
+    background-position: center;
+}
+
+#window-topic {
+    background-image: url('background-topic.png');
+}
+
+#window-login {
+    background-image: url('background-login.png');
+}
+
+#window-discutii {
+    background-image: url('background-discutii.png');
+}
+
+#window-forum {
+    background-image: url('background-forum.png');
+}
+
+#window-cautare {
+    background-image: url('background-cautare.png');
+}
+
+#window-lista-prieteni {
+    background-image: url('background-lista-prieteni.png');
+}
+
+#window-add-prieteni {
+    background-image: url('background-add-prieteni.png');
+}
+
+button {
+    font-family: "Avenir", "Helvetica Neue", "Arial Rounded MT Bold", sans-serif;
+    background-color: #ffffff;
+    border: 1px solid #e6e6e6;
+    border-radius: 5px;
+    padding: 6px 12px;
+    font-size: 14px;
+    color: #202020;
+    transition: background-color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+button:hover {
+    background-color: #e6f7ff;
+    border-color: #b3e5ff;
+}
+
+button:active {
+    background-color: #d6f1ff;
+    border-color: #99d1ff;
+}
+
+entry {
+    background-color: #ffffff;
+    border: 1px solid #c0c0c0;
+    border-radius: 5px;
+    padding: 6px;
+    font-size: 14px;
+    color: #202020;
+    box-shadow: inset 1px 1px 3px rgba(0, 0, 0, 0.1);
+    transition: border-color 0.2s ease, box-shadow 0.3s ease;
+}
+
+entry:focus {
+    border-color: #007acc;
+    box-shadow: inset 0px 0px 5px rgba(0, 122, 204, 0.6);
+}
+
+#scrolled-window,
+#friends-list {
+    background-color: rgba(255, 255, 255, 0);
+}
+
+#friends-list row {
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+}
+
+#friends-list row:focus {
+    background-color: transparent;
+    box-shadow: none;
+}
