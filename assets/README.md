@@ -1,0 +1,2 @@
+- Visual support for the GUI.
+- Designed on Canva.
