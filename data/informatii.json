@@ -1,0 +1,402 @@
+{
+  "TCP": {
+    "description": "TCP (Transmission Control Protocol) este un protocol de comunicație de nivel transport (Layer 4) din suita de protocoale Internet (TCP/IP). TCP asigură o conexiune fiabilă și orientată pe flux între două puncte finale, garantând livrarea datelor în ordinea corectă și fără erori. Acesta realizează acest lucru prin mecanisme de control al fluxului, verificări de integritate și gestionarea retransmisiilor în cazul pierderii pachetelor. TCP este esențial pentru aplicații care necesită fiabilitate și acuratețe în transferul datelor, cum ar fi transferul de fișiere, navigarea pe web și comunicarea prin e-mail.",
+    "advantages": [
+      "Fiabilitate: Asigură livrarea completă și corectă a datelor prin mecanisme de confirmare și retransmisie.",
+      "Ordinea pachetelor: Pachetele ajung în ordinea corectă, prevenind astfel problemele legate de secvențierea datelor.",
+      "Controlul fluxului: Reglează cantitatea de date trimise pentru a preveni suprasarcina receptorului.",
+      "Detectarea erorilor: Utilizează checksum-uri pentru a verifica integritatea datelor transmise.",
+      "Gestionarea congestiei: Implementează algoritmi care ajustează viteza de transmitere a datelor în funcție de starea rețelei."
+    ],
+    "examples": [
+      "Transferul fișierelor prin FTP, unde integritatea datelor este crucială.",
+      "Navigarea pe web prin HTTP/HTTPS, asigurând că paginile sunt încărcate complet și corect.",
+      "Transmiterea e-mailurilor prin SMTP, unde fiecare mesaj trebuie livrat fără erori.",
+      "Aplicațiile de videoconferință care necesită sincronizarea corectă a fluxurilor de date.",
+      "Sistemele de baze de date distribuite care necesită consistență în transferul datelor."
+    ]
+  },
+  "IP": {
+    "description": "IP (Internet Protocol) este responsabil pentru adresarea și rutarea pachetelor de date între dispozitive într-o rețea. Funcționează la nivelul de rețea (Layer 3) din modelul OSI și este esențial pentru comunicațiile pe internet. IP definește modul în care pachetele de date sunt formatate, adresate și rutate de la sursă la destinație, folosind adrese IP unice pentru identificarea fiecărui dispozitiv conectat la rețea. Există două versiuni principale ale protocolului IP: IPv4 și IPv6, IPv6 oferind un spațiu de adrese mult mai extins pentru a acomoda creșterea numărului de dispozitive conectate.",
+    "advantages": [
+      "Adresare unică: Fiecare dispozitiv are o adresă IP unică, facilitând identificarea și comunicarea între dispozitive.",
+      "Ruting eficient: Pachetele sunt direcționate prin cele mai eficiente rute disponibile, optimizând timpul de transfer.",
+      "Scalabilitate: Poate gestiona un număr mare de dispozitive și poate fi extins pentru a suporta rețele mai mari.",
+      "Interoperabilitate: Funcționează în diverse tipuri de rețele și cu diferite tehnologii de acces la rețea.",
+      "Flexibilitate: Suportă atât adrese statice, cât și dinamice, adaptându-se la diverse necesități de rețea."
+    ],
+    "examples": [
+      "Atribuirea unei adrese IP unui computer în rețea prin DHCP.",
+      "Trimiterea de date de la un server la un client prin internet, folosind adrese IP publice și private.",
+      "Configurarea rutelor statice pe un router pentru a direcționa traficul către anumite segmente de rețea.",
+      "Implementarea IPv6 pentru a asigura disponibilitatea adreselor în rețelele moderne.",
+      "Utilizarea adreselor IP în gestionarea rețelelor enterprise pentru segmentarea și securizarea traficului."
+    ]
+  },
+  "UDP": {
+    "description": "UDP (User Datagram Protocol) este un protocol de transport fără conexiune, care permite trimiterea rapidă a pachetelor de date fără garantarea livrării sau ordinii acestora. Este utilizat în aplicații unde viteza este mai importantă decât fiabilitatea, cum ar fi streamingul video și audio, jocurile online și serviciile de telefonie VoIP. UDP minimizează latența prin eliminarea mecanismelor de control al fluxului și verificare a erorilor, făcându-l ideal pentru aplicații în timp real care necesită transmisiuni rapide și continue de date.",
+    "advantages": [
+      "Viteză mare: Transfer rapid de date datorită lipsei mecanismelor de control și verificare.",
+      "Overhead redus: Consumă mai puține resurse de rețea și procesor, permițând transmiterea unui număr mai mare de pachete pe secundă.",
+      "Simplitate: Protocol simplu, ușor de implementat și utilizat în diverse aplicații.",
+      "Transmisii în timp real: Ideal pentru aplicații care necesită livrarea rapidă a datelor, chiar și în condiții de rețea variabile.",
+      "Suport pentru difuzare și multicast: Permite trimiterea datelor către mai mulți destinatari simultan."
+    ],
+    "examples": [
+      "Streaming video și audio în timp real, unde latența redusă este esențială pentru o experiență fluidă.",
+      "Jocuri online multiplayer, unde actualizările rapide ale stării jocului sunt cruciale pentru gameplay.",
+      "Servicii de telefonie VoIP, care necesită transmiterea rapidă a pachetelor audio pentru o comunicare clară.",
+      "Aplicații de televiziune prin internet (IPTV), care necesită livrarea continuă a fluxurilor video.",
+      "Sisteme de monitorizare în timp real, cum ar fi camerele de securitate sau senzorii IoT."
+    ]
+  },
+  "HTTP": {
+    "description": "HTTP (HyperText Transfer Protocol) este protocolul utilizat pentru transferul de pagini web și alte resurse pe World Wide Web. Funcționează pe baza unui model client-server, unde clienții (de exemplu, browserele web) solicită resurse precum pagini HTML, imagini și scripturi, iar serverele le furnizează. HTTP este un protocol fără stare, ceea ce înseamnă că fiecare cerere este independentă și nu menține informații despre cererile anterioare. Pentru a gestiona stările și sesiuni, se utilizează tehnici suplimentare precum cookie-urile și sesiunea de stocare.",
+    "advantages": [
+      "Ușor de utilizat și implementat, datorită structurii sale simple și clare.",
+      "Compatibilitate largă cu diferite tipuri de conținut, inclusiv text, imagini, video și aplicații interactive.",
+      "Suportă metode diverse pentru manipularea resurselor, cum ar fi GET, POST, PUT, DELETE și altele, oferind flexibilitate în dezvoltarea aplicațiilor web.",
+      "Extensibilitate prin utilizarea de extensii și versiuni, cum ar fi HTTP/2 și HTTP/3, care îmbunătățesc performanța și securitatea.",
+      "Integrabilitate cu alte tehnologii web, cum ar fi CSS, JavaScript și API-urile web, facilitând dezvoltarea de aplicații complexe și interactive."
+    ],
+    "examples": [
+      "Accesarea paginilor web prin browsere precum Chrome, Firefox sau Safari, care interpretează și afișează conținutul HTML.",
+      "Transferul de imagini și videoclipuri pe site-uri web pentru a îmbunătăți experiența utilizatorului.",
+      "Interacțiunea cu API-uri web pentru aplicații, permițând transferul de date între client și server.",
+      "Dezvoltarea aplicațiilor web dinamice care răspund la acțiunile utilizatorilor prin solicitări HTTP.",
+      "Servirea resurselor statice și dinamice de pe servere web pentru diverse site-uri și servicii online."
+    ]
+  },
+  "HTTPS": {
+    "description": "HTTPS (HTTP Secure) este o versiune securizată a protocolului HTTP, care utilizează criptarea SSL/TLS pentru a proteja datele transmise între client și server. Prin criptarea comunicațiilor, HTTPS asigură confidențialitatea și integritatea datelor, prevenind interceptarea și modificarea acestora de către terți. Este esențial pentru securizarea comunicațiilor pe internet, fiind utilizat pe scară largă în site-uri de comerț electronic, servicii bancare online și orice altă aplicație care necesită protecția datelor sensibile.",
+    "advantages": [
+      "Confidențialitate: Datele sunt criptate, prevenind interceptarea și accesul neautorizat la informațiile transmise.",
+      "Integritate: Asigură că datele nu sunt modificate în tranzit, protejându-le de atacuri de tip man-in-the-middle.",
+      "Autentificare: Verifică identitatea serverului, asigurând utilizatorilor că se conectează la serverul autentic și nu la o entitate falsificată.",
+      "Îmbunătățirea SEO: Motoarele de căutare, cum ar fi Google, favorizează site-urile securizate cu HTTPS, îmbunătățind vizibilitatea acestora în rezultatele căutării.",
+      "Compatibilitate cu standarde moderne de securitate, facilitând conformitatea cu reglementările privind protecția datelor."
+    ],
+    "examples": [
+      "Navigarea pe site-uri de comerț electronic precum Amazon sau eBay, unde sunt transmise informații personale și financiare.",
+      "Transmiterea informațiilor personale și financiare în formulare online, asigurând securitatea datelor utilizatorilor.",
+      "Accesarea conturilor bancare online prin interfețe securizate care utilizează HTTPS pentru protecția tranzacțiilor.",
+      "Implementarea HTTPS pe site-uri de știri și bloguri pentru a proteja integritatea conținutului și a informațiilor utilizatorilor.",
+      "Securizarea comunicațiilor între aplicații mobile și serverele backend prin utilizarea HTTPS pentru protejarea datelor utilizatorilor."
+    ]
+  },
+  "DNS": {
+    "description": "DNS (Domain Name System) este sistemul care traduce numele de domenii ușor de reținut (cum ar fi www.exemplu.com) în adrese IP numerice necesare pentru localizarea și identificarea dispozitivelor pe rețea. Funcționează ca un director telefonic al internetului, permițând utilizatorilor să acceseze resursele online folosind denumiri semnificative în loc de secvențe complexe de cifre. DNS este distribuit și ierarhic, implicând servere rădăcină, servere de domeniu de nivel superior (TLD) și servere autoritare pentru domenii specifice.",
+    "advantages": [
+      "Ușurință în utilizare: Permite utilizatorilor să folosească nume de domenii memorabile în loc de adrese IP numerice greu de reținut.",
+      "Scalabilitate: Poate gestiona un număr vast de nume de domenii și poate fi extins pentru a include noi domenii și subdomenii.",
+      "Redundanță: Asigură disponibilitatea serviciilor DNS prin replicare și distribuție geografică, prevenind întreruperile de serviciu.",
+      "Flexibilitate: Permite administrarea și actualizarea facilă a înregistrărilor DNS pentru a reflecta schimbările în infrastructura rețelei.",
+      "Securitate: Implementarea extensiilor de securitate DNS, cum ar fi DNSSEC, pentru a preveni atacurile de tip spoofing și cache poisoning."
+    ],
+    "examples": [
+      "Accesarea site-urilor web prin nume de domenii precum www.google.com, fără a fi nevoie să cunoașteți adresa IP a serverului.",
+      "Configurarea înregistrărilor DNS pentru servicii de e-mail, permițând trimiterea și primirea de e-mailuri pe domeniul propriu.",
+      "Gestionarea subdomeniilor pentru diverse servicii, cum ar fi mail.exemplu.com sau shop.exemplu.com, facilitând organizarea și accesul la resurse specifice.",
+      "Implementarea de servere DNS autoritare pentru a gestiona traficul și a asigura disponibilitatea site-urilor și serviciilor online.",
+      "Utilizarea serviciilor de DNS dinamice pentru a permite actualizarea automată a adreselor IP în cazul schimbărilor de rețea."
+    ]
+  },
+  "DHCP": {
+    "description": "DHCP (Dynamic Host Configuration Protocol) este un protocol care atribuie automat adrese IP și alte informații de configurare de rețea dispozitivelor dintr-o rețea. Simplifică gestionarea adreselor IP în rețele mari prin eliminarea necesității configurării manuale a fiecărui dispozitiv. DHCP poate atribui nu doar adrese IP, ci și informații precum gateway-ul implicit, serverele DNS și alte opțiuni de rețea, facilitând astfel conectivitatea și administrarea eficientă a resurselor de rețea.",
+    "advantages": [
+      "Configurare automată: Dispozitivele primesc automat setările necesare de rețea, reducând timpul și efortul necesar pentru configurarea manuală.",
+      "Management eficient al adreselor IP: Previne conflictele de adrese și optimizează utilizarea acestora prin reutilizarea adreselor disponibile.",
+      "Flexibilitate: Permite schimbarea rapidă a configurațiilor de rețea fără a necesita intervenții manuale pe fiecare dispozitiv.",
+      "Scalabilitate: Ușurează gestionarea rețelelor mari prin centralizarea atribuției adreselor și configurărilor de rețea.",
+      "Suport pentru mobilitate: Facilitează conectarea dispozitivelor mobile și a celor care se deplasează între diferite subrețele sau locații."
+    ],
+    "examples": [
+      "Atribuirea automată a adreselor IP în rețelele de birou, asigurând conectivitatea dispozitivelor fără configurări manuale.",
+      "Configurarea parametrilor de rețea pentru dispozitive mobile, cum ar fi laptopuri, smartphone-uri și tablete, care se conectează frecvent la rețele diferite.",
+      "Gestionarea rețelelor Wi-Fi în locuri publice, cum ar fi cafenele sau aeroporturi, unde utilizatorii se conectează temporar la rețea.",
+      "Implementarea de politici DHCP pentru a atribui adrese IP specifice anumitor tipuri de dispozitive sau utilizatori.",
+      "Actualizarea dinamică a setărilor de rețea în funcție de nevoile organizației, cum ar fi schimbările de server DNS sau gateway."
+    ]
+  },
+  "NAT": {
+    "description": "NAT (Network Address Translation) este o tehnică utilizată pentru a traduce adresele IP private ale unei rețele interne în adrese IP publice, permițând astfel mai multor dispozitive să partajeze o singură adresă IP publică. NAT ajută la conservarea adreselor IP limitate disponibile și îmbunătățește securitatea rețelei interne prin ascunderea structurii acesteia față de rețeaua externă. Există mai multe tipuri de NAT, inclusiv SNAT (Source NAT), DNAT (Destination NAT) și PAT (Port Address Translation), fiecare având aplicații specifice în gestionarea traficului de rețea.",
+    "advantages": [
+      "Conservă adresele IP publice limitate, permițând utilizarea mai eficientă a resurselor disponibile.",
+      "Îmbunătățește securitatea rețelei interne prin ascunderea adreselor IP private și a structurii rețelei de către utilizatorii externi.",
+      "Permite gestionarea mai eficientă a traficului de rețea prin redirecționarea pachetelor către dispozitive interne specifice.",
+      "Facilitează implementarea rețelelor private într-un mediu public, cum ar fi internetul, fără a expune direct dispozitivele interne.",
+      "Suportă conexiuni simultane multiple prin utilizarea porturilor pentru a diferenția fluxurile de date."
+    ],
+    "examples": [
+      "Partajarea unei conexiuni la internet între mai multe dispozitive într-o rețea locală de domiciliu sau birou folosind un router cu funcție NAT.",
+      "Configurarea port forwarding pentru a permite accesul extern la servere interne, cum ar fi serverele web sau de jocuri.",
+      "Implementarea unei rețele de domiciliu cu mai multe dispozitive conectate, toate accesând internetul printr-o singură adresă IP publică.",
+      "Gestionarea traficului pentru o rețea enterprise care necesită acces controlat la resursele interne din exterior.",
+      "Folosirea NAT pentru a permite dispozitivelor mobile să se conecteze la rețeaua internă printr-o adresă IP publică comună."
+    ]
+  },
+  "VPN": {
+    "description": "VPN (Virtual Private Network) este o tehnologie care creează o conexiune securizată și criptată peste o rețea publică, permițând utilizatorilor să acceseze resursele unei rețele private de la distanță. VPN-urile sunt utilizate pentru a asigura confidențialitatea și integritatea datelor transmise, protejându-le de interceptare și atacuri. Ele sunt esențiale pentru organizațiile care au angajați care lucrează de la distanță sau care au nevoie să acceseze resurse interne din locații diferite, precum și pentru utilizatorii care doresc să își protejeze confidențialitatea online.",
+    "advantages": [
+      "Securitate sporită: Protejează datele transmise prin criptare, prevenind interceptarea și accesul neautorizat.",
+      "Confidențialitate: Ascunde adresa IP reală a utilizatorului, oferind anonimat și protejând identitatea online.",
+      "Acces la resurse restricționate: Permite accesul la rețele interne sau resurse geografice restricționate de oriunde în lume.",
+      "Protecție în rețele publice: Asigură o conexiune securizată atunci când utilizatorii se conectează la rețele Wi-Fi publice nesigure.",
+      "Flexibilitate și mobilitate: Facilitează munca de la distanță și accesul la rețele corporative fără a compromite securitatea."
+    ],
+    "examples": [
+      "Conectarea la rețeaua companiei de la birou de acasă, permițând accesul la fișiere și aplicații interne într-un mod securizat.",
+      "Navigarea anonimă pe internet prin mascarea adresei IP reale și criptarea traficului de date.",
+      "Accesarea serviciilor geo-restricționate, cum ar fi conținutul media disponibil doar în anumite regiuni geografice.",
+      "Protejarea comunicațiilor în timpul călătoriilor, când utilizatorii se conectează la rețele publice de internet.",
+      "Implementarea de VPN-uri site-to-site pentru a conecta mai multe locații fizice ale unei organizații într-o rețea unificată și securizată."
+    ]
+  },
+  "Firewall": {
+    "description": "Firewall este un sistem de securitate a rețelei care monitorizează și controlează traficul de rețea în funcție de reguli de securitate prestabilite. Poate fi implementat atât în hardware, cât și în software, și este proiectat pentru a proteja rețeaua internă de accesul neautorizat și de atacurile cibernetice. Firewall-urile pot filtra traficul pe baza adreselor IP, porturilor, protocoalelor și a altor criterii, oferind un control granular asupra ceea ce este permis sau blocat în rețea.",
+    "advantages": [
+      "Protecție împotriva atacurilor externe, cum ar fi atacurile de tip DDoS, hacking și malware.",
+      "Control asupra traficului de rețea, permițând sau blocând anumite tipuri de trafic în funcție de politicile de securitate.",
+      "Prevenirea accesului neautorizat la resursele interne, protejând datele și sistemele sensibile.",
+      "Monitorizare și raportare a activităților de rețea, oferind vizibilitate asupra potențialelor amenințări și incidente de securitate.",
+      "Implementarea de politici de securitate personalizate care să se potrivească nevoilor specifice ale organizației."
+    ],
+    "examples": [
+      "Configurarea unui firewall pe un router de domiciliu pentru a proteja rețeaua de acasă de accesul neautorizat.",
+      "Implementarea unui firewall la nivel de rețea într-o companie pentru a monitoriza și controla traficul între diferitele segmente de rețea.",
+      "Utilizarea firewall-urilor software pe computere personale pentru a proteja sistemul de atacurile locale și de la distanță.",
+      "Aplicarea de reguli de firewall pentru a permite accesul doar la anumite servicii și porturi necesare pentru funcționarea aplicațiilor.",
+      "Monitorizarea traficului prin firewall pentru a detecta și răspunde rapid la activități suspecte sau anormale în rețea."
+    ]
+  },
+  "SSL_TLS": {
+    "description": "SSL (Secure Sockets Layer) și TLS (Transport Layer Security) sunt protocoale criptografice care asigură comunicarea securizată peste internet. Ele criptează datele transmise între client și server, protejându-le de interceptare și modificare. SSL a fost succedat de TLS, care oferă securitate îmbunătățită și este considerat mai sigur. Aceste protocoale sunt utilizate pe scară largă pentru a proteja tranzacțiile online, comunicațiile prin email și orice alt tip de transfer de date care necesită confidențialitate și integritate.",
+    "advantages": [
+      "Confidențialitate: Criptarea datelor transmise previne accesul neautorizat la informațiile sensibile.",
+      "Integritate: Asigură că datele nu sunt alterate sau modificate în timpul transferului.",
+      "Autentificare: Verifică identitatea părților implicate în comunicare, prevenind atacurile de tip man-in-the-middle.",
+      "Compatibilitate largă: Suportat de majoritatea browserelor web, serverelor și aplicațiilor, facilitând adoptarea pe scară largă.",
+      "Îmbunătățirea încrederii utilizatorilor: Utilizarea SSL/TLS este un semn de securitate pentru utilizatori, crescând încrederea în site-uri și servicii online."
+    ],
+    "examples": [
+      "Protejarea tranzacțiilor online pe site-uri de comerț electronic, asigurând că informațiile financiare sunt transmise în siguranță.",
+      "Securizarea comunicațiilor prin email prin criptarea conținutului mesajelor și a anexelor.",
+      "Criptarea conexiunilor la serverele de baze de date pentru a proteja datele sensibile stocate și accesate de aplicații.",
+      "Implementarea SSL/TLS pe site-uri web pentru a activa HTTPS, indicând utilizatorilor că site-ul este securizat.",
+      "Asigurarea comunicațiilor între aplicațiile mobile și serverele backend prin utilizarea TLS pentru protejarea datelor utilizatorilor."
+    ]
+  },
+  "SMTP": {
+    "description": "SMTP (Simple Mail Transfer Protocol) este protocolul standard utilizat pentru trimiterea și relay-ul emailurilor pe internet. Funcționează la nivelul de aplicație (Layer 7) din modelul OSI și este responsabil pentru transferul mesajelor de la clientul de email către serverul de email și între serverele de email. SMTP utilizează un model de comunicare client-server, unde clientul inițiază conexiunea pentru a trimite emailuri către serverul de destinație sau către alte servere intermediare.",
+    "advantages": [
+      "Standardizare: Este protocolul standard pentru trimiterea emailurilor, asigurând interoperabilitatea între diferite sisteme și platforme.",
+      "Simplitate: Protocol simplu și ușor de implementat, facilitând adoptarea pe scară largă.",
+      "Extensibilitate: Poate fi extins prin diverse comenzi și extensii pentru a suporta funcționalități suplimentare.",
+      "Compatibilitate: Funcționează bine cu alte protocoale de email, cum ar fi POP3 și IMAP, pentru a oferi o soluție completă de gestionare a emailurilor.",
+      "Fiabilitate: Asigură livrarea mesajelor prin mecanisme de retry în cazul eșecului inițial al livrării."
+    ],
+    "examples": [
+      "Trimiterea unui email de la un client de email precum Outlook sau Thunderbird către serverul de email al furnizorului de servicii.",
+      "Relay-ul emailurilor între serverele de email pentru a livra mesajele către destinatarii finali.",
+      "Configurarea serverelor de email pentru a accepta și trimite emailuri folosind SMTP.",
+      "Integrarea SMTP în aplicații web pentru a trimite notificări și alerte prin email utilizatorilor.",
+      "Utilizarea SMTP în serverele de marketing prin email pentru a distribui campanii de newsletter către o listă de abonați."
+    ]
+  },
+  "IMAP": {
+    "description": "IMAP (Internet Message Access Protocol) este un protocol de acces la emailuri care permite utilizatorilor să vizualizeze și să gestioneze mesajele de pe serverul de email în timp real. Funcționează la nivelul de aplicație (Layer 7) din modelul OSI și permite sincronizarea emailurilor între diferite dispozitive, astfel încât modificările efectuate pe un dispozitiv să fie reflectate pe toate celelalte.",
+    "advantages": [
+      "Sincronizare multiplatformă: Permite accesul la aceleași emailuri de pe multiple dispozitive, menținând consistența datelor.",
+      "Gestionare centralizată: Emailurile sunt stocate pe server, facilitând accesul și organizarea acestora fără a consuma spațiu pe dispozitivele locale.",
+      "Funcționalități avansate: Suportă căutarea și filtrarea emailurilor direct pe server, îmbunătățind eficiența gestionării mesajelor.",
+      "Flexibilitate: Permite utilizatorilor să organizeze emailurile în foldere personalizate pe server, menținând structura acestora în toate clientele de email.",
+      "Reducerea riscului de pierdere a datelor: Deoarece emailurile sunt stocate pe server, acestea pot fi recuperate în caz de defectarea dispozitivului local."
+    ],
+    "examples": [
+      "Accesarea și gestionarea emailurilor prin clientul de email Outlook, sincronizându-se cu serverul de email pentru a reflecta toate modificările.",
+      "Utilizarea IMAP pe dispozitive mobile pentru a verifica și organiza emailurile în timp real.",
+      "Configurarea serverelor de email pentru a permite utilizatorilor să acceseze emailurile lor de pe diverse platforme fără a sincroniza manual mesajele.",
+      "Implementarea IMAP în aplicații web de email pentru a oferi o experiență de utilizare consistentă și actualizată.",
+      "Sincronizarea emailurilor între desktop și laptop, asigurând că toate folderele și mesajele sunt identice pe ambele dispozitive."
+    ]
+  },
+  "SSH": {
+    "description": "SSH (Secure Shell) este un protocol de rețea utilizat pentru a stabili conexiuni securizate și criptate între un client și un server. Funcționează la nivelul de aplicație (Layer 7) din modelul OSI și este folosit în principal pentru administrarea serverelor la distanță, transferul de fișiere și tunelarea securizată a altor protocoale. SSH înlocuiește protocoalele nesigure precum Telnet și FTP, oferind un canal criptat care protejează datele transmise împotriva interceptării și atacurilor de tip man-in-the-middle.",
+    "advantages": [
+      "Securitate ridicată: Criptarea datelor asigură confidențialitatea și integritatea comunicațiilor între client și server.",
+      "Autentificare puternică: Suportă autentificarea prin chei publice și private, reducând riscul de acces neautorizat.",
+      "Flexibilitate: Permite execuția de comenzi la distanță, transferul de fișiere și tunelarea traficului pentru diverse aplicații.",
+      "Compatibilitate: Disponibil pe majoritatea sistemelor de operare, inclusiv Linux, macOS și Windows, facilitând administrarea hibridă a serverelor.",
+      "Ușurință în utilizare: Instrumente și clienți SSH sunt disponibile pentru a simplifica stabilirea conexiunilor securizate."
+    ],
+    "examples": [
+      "Administrarea serverelor Linux la distanță prin intermediul unor terminale securizate folosind SSH.",
+      "Transferul fișierelor sensibile între calculatoare folosind SCP (Secure Copy Protocol) sau SFTP (SSH File Transfer Protocol).",
+      "Tunelarea traficului web prin SSH pentru a accesa resurse interne ale unei rețele corporative în mod securizat.",
+      "Automatizarea sarcinilor administrative pe servere prin scripturi care utilizează conexiuni SSH.",
+      "Accesarea interfețelor de administrare ale aplicațiilor web care rulează pe servere securizate prin tuneluri SSH."
+    ]
+  },
+  "FTP": {
+    "description": "FTP (File Transfer Protocol) este un protocol standard utilizat pentru transferul de fișiere între un client și un server pe o rețea de calculatoare. Funcționează la nivelul de aplicație (Layer 7) din modelul OSI și permite utilizatorilor să încarce, să descarce, să ștergă, să redenumească și să organizeze fișiere pe serverul de destinație. FTP folosește un model de comunicare client-server și poate opera în două moduri principale: activ și pasiv, în funcție de modul în care sunt stabilite conexiunile de date.",
+    "advantages": [
+      "Transfer rapid de fișiere: Permite transferul eficient al fișierelor mari între calculatoare.",
+      "Gestionare centralizată: Facilitarea administrării fișierelor pe servere centralizate, accesibile de pe multiple dispozitive.",
+      "Flexibilitate: Suportă diverse tipuri de fișiere și permite organizarea acestora în directoare și subdirectoare.",
+      "Compatibilitate: Este suportat de majoritatea sistemelor de operare și clienților FTP disponibili.",
+      "Automatizare: Permite scripturi și programe automate pentru transferuri recurente de fișiere."
+    ],
+    "examples": [
+      "Încărcarea site-urilor web pe servere prin intermediul unor clienți FTP precum FileZilla.",
+      "Descărcarea fișierelor de software de pe serverele de distribuție folosind protocolul FTP.",
+      "Transferul fișierelor de backup între calculatoare locale și servere centralizate prin FTP.",
+      "Distribuirea fișierelor media mari între colaboratori în cadrul unor proiecte comune folosind FTP.",
+      "Automatizarea actualizărilor de conținut pe servere de hosting prin scripturi FTP programate."
+    ]
+  },
+  "SFTP": {
+    "description": "SFTP (SSH File Transfer Protocol) este un protocol de transfer de fișiere care operează peste conexiuni SSH securizate. Diferențiat de FTP, SFTP asigură criptarea datelor și autentificarea sigură, protejând fișierele transmise de interceptare și accesul neautorizat. Funcționează la nivelul de aplicație (Layer 7) din modelul OSI și oferă funcționalități similare cu FTP, dar cu beneficii suplimentare de securitate oferite de SSH.",
+    "advantages": [
+      "Securitate sporită: Toate transferurile de fișiere sunt criptate, prevenind interceptarea și modificarea datelor.",
+      "Autentificare robustă: Utilizează metode de autentificare SSH, inclusiv autentificarea cu chei publice și private.",
+      "Compatibilitate cu SSH: Poate fi utilizat împreună cu alte funcționalități SSH, cum ar fi tunelarea și executarea de comenzi la distanță.",
+      "Simplificarea administrării: Permite administrarea centralizată a fișierelor în mediile securizate.",
+      "Depășirea restricțiilor de firewall: Funcționează pe portul SSH standard (de obicei 22), facilitând transferurile chiar și în rețele restrictive."
+    ],
+    "examples": [
+      "Transferul fișierelor sensibile între servere și clienți folosind SFTP pentru a asigura securitatea datelor.",
+      "Backup-uri securizate ale datelor de pe servere prin SFTP, protejând fișierele de accesul neautorizat.",
+      "Încărcarea și descărcarea fișierelor de configurare ale aplicațiilor pe servere prin SFTP.",
+      "Automatizarea transferurilor de fișiere în scripturi de administrare care utilizează SFTP pentru securitate sporită.",
+      "Accesarea și gestionarea fișierelor stocate pe servere cloud prin interfețe SFTP securizate."
+    ]
+  },
+  "ICMP": {
+    "description": "ICMP (Internet Control Message Protocol) este un protocol de rețea folosit pentru a trimite mesaje de control și eroare între dispozitivele dintr-o rețea. Funcționează la nivelul de rețea (Layer 3) din modelul OSI și este esențial pentru diagnosticul rețelei și gestionarea comunicațiilor. ICMP este utilizat de comenzi precum Ping și Traceroute pentru a verifica disponibilitatea și traseul pachetelor de date între sursă și destinație.",
+    "advantages": [
+      "Diagnosticul rețelei: Permite identificarea și localizarea problemelor de conectivitate în rețea.",
+      "Feedback din rețea: Oferă informații despre starea comunicațiilor și despre erorile apărute în transmiterea pachetelor.",
+      "Gestionarea congestiei: Ajută la detectarea și gestionarea congestiilor în rețea prin mesaje de control.",
+      "Traseare eficientă: Facilitează determinarea traseului pachetelor de date prin rețea, ajutând la optimizarea rutării.",
+      "Compatibilitate universală: Este suportat de toate dispozitivele și sistemele de operare conectate la internet."
+    ],
+    "examples": [
+      "Utilizarea comenzii Ping pentru a verifica dacă un server este accesibil și cât timp durează răspunsul.",
+      "Folosirea Traceroute pentru a identifica traseul și eventualele puncte de blocare ale pachetelor de date între două noduri din rețea.",
+      "Recepționarea mesajelor de eroare ICMP atunci când un pachet nu poate ajunge la destinație din cauza unor probleme de rutare.",
+      "Monitorizarea stării rețelei prin intermediul mesajelor ICMP pentru a detecta și rezolva rapid problemele de conectivitate.",
+      "Utilizarea ICMP pentru a ajusta parametrii de rutare și pentru a optimiza performanța rețelei în timp real."
+    ]
+  },
+  "Wi-Fi": {
+    "description": "Wi-Fi este o tehnologie de comunicație fără fir care permite dispozitivelor să se conecteze la internet și la rețele locale prin intermediul undelor radio. Standardul Wi-Fi operează pe frecvențe de 2.4 GHz și 5 GHz și face parte din familia de tehnologii bazate pe IEEE 802.11. Wi-Fi este utilizat pe scară largă în locuințe, birouri, spații publice și multe alte medii pentru a oferi acces la internet fără a necesita cabluri fizice.",
+    "advantages": [
+      "Mobilitate: Permite utilizatorilor să se deplaseze liber în zona de acoperire a rețelei fără a fi legați de cabluri.",
+      "Ușurință în instalare: Instalarea unei rețele Wi-Fi este mai simplă și mai flexibilă comparativ cu rețelele cablate.",
+      "Compatibilitate largă: Majoritatea dispozitivelor moderne, inclusiv smartphone-uri, laptopuri, tablete și televizoare inteligente, sunt echipate cu funcționalități Wi-Fi.",
+      "Scalabilitate: Rețelele Wi-Fi pot fi extinse cu ușurință prin adăugarea de puncte de acces suplimentare pentru a acoperi zone mai mari.",
+      "Costuri reduse: Eliminarea necesității cablurilor fizice reduce costurile de instalare și întreținere a rețelei."
+    ],
+    "examples": [
+      "Conectarea laptopurilor și smartphone-urilor la rețeaua Wi-Fi a unei case pentru acces la internet.",
+      "Furnizarea de acces Wi-Fi în cafenele, aeroporturi și alte spații publice pentru a permite utilizatorilor să navigheze online.",
+      "Utilizarea Wi-Fi în birouri pentru a permite angajaților să se conecteze la rețeaua internă și la resursele de internet.",
+      "Implementarea rețelelor Wi-Fi în școli și universități pentru a oferi studenților acces la materiale educaționale și resurse online.",
+      "Conectarea dispozitivelor IoT (Internet of Things) la rețeaua Wi-Fi pentru a facilita controlul și monitorizarea acestora de la distanță."
+    ]
+  },
+  "Ethernet": {
+    "description": "Ethernet este o tehnologie de rețea cu fir folosită pentru conectarea dispozitivelor într-o rețea locală (LAN). Funcționează la nivelurile de legătură de date (Layer 2) și de rețea (Layer 3) din modelul OSI și utilizează cabluri fizice, cum ar fi cablurile de tip twisted pair sau fibră optică, pentru a transmite datele între dispozitive. Ethernet este cunoscut pentru viteza sa mare, fiabilitatea și scalabilitatea, fiind una dintre cele mai utilizate tehnologii de rețea la nivel global.",
+    "advantages": [
+      "Viteză ridicată: Oferă rate de transfer de date rapide, de la 10 Mbps până la 100 Gbps și mai mult, în funcție de standardul Ethernet utilizat.",
+      "Fiabilitate: Transmisia datelor prin cabluri fizice este mai puțin susceptibilă la interferențe și pierderi de semnal comparativ cu rețelele wireless.",
+      "Securitate: Conexiunile cablate sunt mai sigure, deoarece accesul neautorizat la rețea necesită acces fizic la cabluri.",
+      "Scalabilitate: Rețelele Ethernet pot fi extinse cu ușurință prin adăugarea de switch-uri și routere pentru a conecta mai multe dispozitive.",
+      "Compatibilitate universală: Standardele Ethernet sunt larg acceptate și suportate de majoritatea dispozitivelor de rețea și echipamentelor de calcul."
+    ],
+    "examples": [
+      "Conectarea calculatoarelor de birou la rețeaua locală folosind cabluri Ethernet pentru a asigura o conexiune rapidă și stabilă la internet.",
+      "Implementarea rețelelor Ethernet în centrele de date pentru a asigura transferul rapid și fiabil al datelor între servere și echipamente.",
+      "Utilizarea Ethernet în sistemele de securitate video pentru a conecta camerele de supraveghere la rețea.",
+      "Configurarea rețelelor Ethernet în locuințe pentru a conecta dispozitive precum televizoare inteligente, console de jocuri și console media.",
+      "Integrarea rețelelor Ethernet în industrii pentru a conecta echipamente de producție, mașini și sisteme de control industrial."
+    ]
+  },
+  "OSI": {
+    "description": "Modelul OSI (Open Systems Interconnection) este un cadru conceptual care descrie cum datele sunt transmise printr-o rețea de comunicații. Este structurat în șapte straturi distincte, fiecare având funcții specifice care permit interoperabilitatea între diferite sisteme și tehnologii de rețea. Modelul OSI a fost dezvoltat de către ISO (International Organization for Standardization) pentru a facilita standardizarea și dezvoltarea rețelelor de calculatoare.",
+    "advantages": [
+      "Standardizare: Oferă un limbaj comun și un set de standarde pentru dezvoltatorii și inginerii de rețea, facilitând interoperabilitatea între diverse echipamente și tehnologii.",
+      "Modularitate: Permite dezvoltarea și îmbunătățirea fiecărui strat independent, fără a afecta celelalte straturi.",
+      "Diagnosticare simplificată: Ajută la identificarea și rezolvarea problemelor de rețea prin izolarea acestora la un anumit strat.",
+      "Flexibilitate: Permite integrarea noilor tehnologii și protocoale în rețea fără a necesita o revizuire completă a infrastructurii existente.",
+      "Educație și înțelegere: Este un instrument educațional valoros pentru a înțelege funcționarea și interacțiunea diferitelor componente ale rețelei."
+    ],
+    "examples": [
+      "Utilizarea modelului OSI pentru a explica cum datele trec de la aplicație la rețea și invers în timpul unei comunicații de internet.",
+      "Diagnosticarea problemelor de rețea prin identificarea stratului la care apare defecțiunea, de exemplu, la stratul fizic sau la stratul de transport.",
+      "Dezvoltarea de software de rețea care respectă standardele OSI pentru a asigura compatibilitatea cu diverse echipamente și protocoale.",
+      "Implementarea de politici de securitate la diferite straturi ale modelului OSI pentru a proteja datele și resursele rețelei.",
+      "Planificarea și proiectarea rețelelor de calculatoare folosind modelul OSI pentru a organiza și optimiza infrastructura rețelei."
+    ]
+  },
+  "Sockets": {
+    "description": "Sockets sunt interfețe de programare care permit comunicarea între procese sau între calculatoare într-o rețea. Ele funcționează ca puncte finale pentru transmiterea și recepția datelor și sunt utilizate în principal pentru implementarea comunicațiilor client-server. Sockets pot opera atât în moduri orientate pe conexiune (TCP) cât și fără conexiune (UDP), oferind flexibilitate în dezvoltarea aplicațiilor de rețea.",
+    "advantages": [
+      "Flexibilitate: Permite comunicarea bidirecțională între procese sau calculatoare, suportând atât TCP cât și UDP.",
+      "Scalabilitate: Poate gestiona un număr mare de conexiuni simultane, fiind ideal pentru aplicații de mare anvergură.",
+      "Compatibilitate multiplatformă: Disponibile pe majoritatea sistemelor de operare, inclusiv Linux, Windows și macOS.",
+      "Control granular: Oferă dezvoltatorilor un control detaliat asupra modului de transmitere a datelor și gestionării conexiunilor.",
+      "Integrare ușoară: Se integrează bine cu diverse limbaje de programare și cadre de dezvoltare."
+    ],
+    "examples": [
+      "Dezvoltarea aplicațiilor web care folosesc sockets pentru a gestiona comunicațiile între server și clienți în timp real.",
+      "Implementarea chat-urilor online unde utilizatorii pot trimite și primi mesaje instantaneu prin sockets.",
+      "Crearea de servere de jocuri multiplayer care utilizează sockets pentru a sincroniza starea jocului între jucători.",
+      "Transferul de fișiere în aplicații peer-to-peer folosind sockets pentru a stabili conexiuni directe între calculatoare.",
+      "Monitorizarea și gestionarea traficului de rețea prin aplicații personalizate care comunică prin sockets."
+    ]
+  },
+  "Pipes": {
+    "description": "Pipes sunt mecanisme de comunicare inter-proces (IPC) utilizate pentru a transfera date între două sau mai multe procese într-un sistem de operare. Ele permit fluxuri de date unidirecționale sau bidirecționale, facilitând schimbul de informații într-un mod eficient și sincronizat. Pipes sunt frecvent utilizate în sistemele Unix și Linux pentru a crea lanțuri de comenzi și a permite proceselor să colaboreze.",
+    "advantages": [
+      "Eficiență: Permite transferul rapid și direct al datelor între procese fără necesitatea stocării temporare pe disc.",
+      "Simplitate: Ușor de implementat și utilizat pentru comunicarea între procese într-un sistem de operare.",
+      "Sincronizare automată: Fluxurile de date sunt gestionate de sistemul de operare, asigurând sincronizarea între procese.",
+      "Resurse reduse: Consumă puține resurse de sistem comparativ cu alte metode de IPC, cum ar fi memoria partajată.",
+      "Modularitate: Permite crearea de aplicații modulare în care procesele pot fi combinate într-un lanț logic."
+    ],
+    "examples": [
+      "Utilizarea pipelor în shell-uri Unix pentru a conecta comenzi precum `ls | grep 'txt'`, unde ieșirea comenzii `ls` este folosită ca intrare pentru `grep`.",
+      "Crearea de aplicații care procesează date în mai multe etape, unde fiecare proces prelucrează o parte din date și le transmite următorului proces prin pipes.",
+      "Implementarea de servicii de prelucrare în paralel unde procesele lucrează pe segmente diferite ale datelor și comunică prin pipes.",
+      "Dezvoltarea de programe care utilizează pipes pentru a transmite informații între module interne fără a expune detaliile de implementare ale fiecărui modul.",
+      "Construirea de instrumente de monitorizare a sistemului care colectează și procesează date în timp real folosind pipes pentru a lega diverse componente ale aplicației."
+    ]
+  },
+  "Telnet": {
+    "description": "Telnet este un protocol de rețea utilizat pentru a stabili conexiuni de terminal la distanță către alte calculatoare în rețea. Funcționează la nivelul de aplicație (Layer 7) din modelul OSI și permite utilizatorilor să controleze servere și alte dispozitive de la distanță prin intermediul unei interfețe de linie de comandă. Telnet a fost unul dintre primele protocoale de acest gen, dar este considerat nesigur deoarece transmite datele, inclusiv credențialele, în text clar.",
+    "advantages": [
+      "Simplicitate: Protocol simplu și ușor de implementat pentru accesul la terminale la distanță.",
+      "Compatibilitate: Disponibil pe majoritatea sistemelor de operare și dispozitivelor de rețea, facilitând accesul universal.",
+      "Control la distanță: Permite administrarea și configurarea serverelor și echipamentelor de rețea de la orice locație.",
+      "Fără necesitatea instalării de software suplimentar: Majoritatea sistemelor de operare au suport nativ pentru Telnet.",
+      "Diagnosticare și depanare: Utilizat pentru a testa și verifica conectivitatea și funcționalitatea serviciilor de rețea."
+    ],
+    "examples": [
+      "Accesarea serverelor Unix la distanță pentru a efectua operațiuni administrative prin intermediul unei sesiuni Telnet.",
+      "Conectarea la echipamentele de rețea, cum ar fi routere și switch-uri, pentru a le configura și monitoriza folosind Telnet.",
+      "Utilizarea Telnet pentru a verifica porturile deschise ale unui server și pentru a diagnostica probleme de conectivitate.",
+      "Accesarea consolei de comandă a unor aplicații sau servicii care oferă suport pentru conexiuni Telnet.",
+      "Testarea răspunsurilor serverelor web sau a altor servicii de rețea prin trimiterea de comenzi manuale prin Telnet."
+    ]
+  },
+  "Help": {
+    "help": [
+      "Acestea sunt câteva keyword-uri populare: TCP, IP, UDP, HTTP, HTTPS, DNS, DHCP, NAT, VPN, Firewall, SSL_TLS, SMTP, IMAP, SSH, FTP, SFTP, ICMP, Wi-Fi, Ethernet, OSI, Sockets, Pipes, Telnet" ]
+  },
+  "help": {
+    "help": [
+      "Acestea sunt câteva keyword-uri populare: TCP, IP, UDP, HTTP, HTTPS, DNS, DHCP, NAT, VPN, Firewall, SSL_TLS, SMTP, IMAP, SSH, FTP, SFTP, ICMP, Wi-Fi, Ethernet, OSI, Sockets, Pipes, Telnet"
+    ]
+  }
+}
