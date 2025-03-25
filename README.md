@@ -7,54 +7,54 @@ This repository contains a client-server system designed to facilitate learning 
 - **Login System:** Authenticate users via username/password stored in a demonstrative login.config file.
   <br>
   <br>
-  <img width="998" alt="login" src="https://github.com/user-attachments/assets/5157d314-1155-47bd-ad61-fc301c641d18" />
+  <img width="998" alt="login" src="https://github.com/user-attachments/assets/280f7d72-7a7a-4df1-90ba-76b7bb9e31ce" />
   <br>
   <br>
 - **Menu:** Redirects to the Dictionary/Forum.
   <br>
   <br>
-  <img width="998" alt="menu" src="https://github.com/user-attachments/assets/d5a6ef17-6992-4a06-bb27-1ee22fdf8947" />
+  <img width="998" alt="menu" src="https://github.com/user-attachments/assets/725401c7-5f76-4cc2-b51b-096cc4688b0d" />
   <br>
   <br>
 - **Network Concept Search:** ASCII-based dictionary returning detailed explanations for keywords (e.g., "TCP", "DNS").
   <br>
   <br>
-  <img width="998" alt="dictionary" src="https://github.com/user-attachments/assets/2ed8e524-a159-45c3-a7d0-2a852ea783b1" />
+  <img width="998" alt="dictionary" src="https://github.com/user-attachments/assets/15845d9f-f649-40a1-8b85-7408fce79f72" />
   <br>
   <br>
   -  Use "help" to get suggested terms.
   <br>
-  <img width="998" alt="dictionary_help" src="https://github.com/user-attachments/assets/be5f65d8-fabb-4da3-9e98-d842ba179d84" />
+  <img width="998" alt="dictionary_help" src="https://github.com/user-attachments/assets/8dc303ff-bb8a-4cdf-a7b9-b848288687f0" />
   <br>
   <br>
 - **Interactive Forum:**
   - Topic Management: Users can initiate new discussions and contribute to existing threads
   <br>
-  <img width="999" alt="discussions" src="https://github.com/user-attachments/assets/448560d9-7fe0-41d3-b4fc-528f1619b42d" />
+  <img width="999" alt="discussions" src="https://github.com/user-attachments/assets/c56afd0e-c481-4bf1-b337-49bf07e37ebe" />
   <br>
   <br>
   - Real-Time Discussions: Create/join network-related topics with live message updates (3-second refresh)
   <br>
   <br>
-  <img width="998" alt="random_disc" src="https://github.com/user-attachments/assets/c8a7286e-e9bc-4475-801b-1ecdd612766c" />
+  <img width="998" alt="random_disc" src="https://github.com/user-attachments/assets/97f59997-01fa-469f-a287-16a7161a74fa" />
   <br>
   <br>
   - Bookmark System: Save important discussions for quick access
   <br>
   <br>
-  <img width="998" alt="bookmarks" src="https://github.com/user-attachments/assets/5a46bed8-61b2-422d-bce5-35ac9a66fe5c" />
+  <img width="998" alt="bookmarks" src="https://github.com/user-attachments/assets/4f47292f-ea13-4a45-88b9-147be30bfa53" />
   <br>
   <br>
 - **Social Features:**
   - Friend List: View/remove friends with X button functionality
   <br>
-  <img width="999" alt="friends" src="https://github.com/user-attachments/assets/2dfffd9e-8256-41ab-89c3-44cc5d9bd997" />
+  <img width="999" alt="friends" src="https://github.com/user-attachments/assets/890f0e64-9141-4113-893c-e47394c82a8c" />
   <br>
   <br>
   - Friend Requests: Send/accept connection invitations between users
   <br>
   <br>
-  <img width="999" alt="friendAdd" src="https://github.com/user-attachments/assets/261f4c35-b5a8-4c2f-8747-861d7d8d8b0a" />
+  <img width="999" alt="friendAdd" src="https://github.com/user-attachments/assets/c2b23354-bb83-4917-9a75-3b5d28d2bc3c" />
   <br>
   <br>
 
